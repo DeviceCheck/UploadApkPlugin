@@ -118,6 +118,7 @@ public class SendMsgHelper {
          */
         String json = JsonOutput.toJson(feiShuRequestBean);
         System.out.println("send to feishu request json：" + json);
+        json = json.replace("msgType", "msg_type");
         RequestBody requestBody = RequestBody.create(MediaType.parse("application/json;charset=UTF-8"), json);
         Request request = new Request.Builder()
                 .addHeader("Connection", "Keep-Alive")
