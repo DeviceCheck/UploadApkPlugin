@@ -12,16 +12,16 @@ public class FeiShuRequestBean {
 
 
     @SerializedName("msg_type")
-    private String msgType;
+    private String msg_type;
     @SerializedName("content")
     private ContentDTO content;
 
     public String getMsgType() {
-        return msgType;
+        return msg_type;
     }
 
     public void setMsgType(String msgType) {
-        this.msgType = msgType;
+        this.msg_type = msgType;
     }
 
     public ContentDTO getContent() {
